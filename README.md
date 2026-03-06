@@ -1,9 +1,7 @@
 # Sample-R-Code--Constructing-1D-Maps
 This is a project description of an R markdown script I wrote for mapping out the various One Medical Amazon locations in the United States. 
 
-
-
-
+```{r}
 
 #Load Required Packages
 install.packages(c("tidygeocoder", "readxl", "dplyr", "ggplot2", "geosphere"))
@@ -44,8 +42,7 @@ pharmacies <- geocoded_df %>%
 
 
 
-```
-```{r}
+
 leaflet() %>%
   addTiles() %>%
   addCircleMarkers(
@@ -68,3 +65,4 @@ leaflet() %>%
     overlayGroups = c("Clinics", "Pharmacies"),
     options = layersControlOptions(collapsed = FALSE)
   )
+```
