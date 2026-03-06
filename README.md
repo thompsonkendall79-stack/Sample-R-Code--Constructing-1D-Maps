@@ -16,7 +16,7 @@ install.packages("leaflet")
 library(leaflet)
 
 #
-geocoded_df <- read.csv("C:/Users/Thomp/OneDrive/ITEC-300 R Files/clinics_pharmacies_geocoded.csv")
+geocoded_df <- read.csv("Insert_Data_Here")
 
 clinics <- geocoded_df %>%
   filter(Pharmacy %in% c("PA00_BERWICK", "PA00_BLOOMSBURG")) %>%
